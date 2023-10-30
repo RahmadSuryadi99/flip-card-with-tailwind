@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="/src/style.css" type="text/css"  rel="stylesheet">
+</head>
+
+<body>
+    <section class="bg-gray-900 h-screen flex justify-center items-center gap-x-16 text-white ">
+        <div class="w-[300px] h-[420px] bg-transparant cursor-pointer group perspective">
+            <div class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
+               <div class="absolute backface-hidden border-2 w-full h-full">
+                   <img src="./assets/img/ironman3.jpg" class="w-full h-full"/>
+                </div>
+                <div class="absolute backface-hidden my-rotate-y-180 w-full h-full bg-gray-100 overflow-hidden">
+                    <div class=" text-center flex flex-col items-center justify-center h-full text-gray-800 px-2 pb-24">
+                        <h1 class="text-3xl font-semibold">Iron Man 3</h1>
+                        <p class="my-2">9.0 rating</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nihil commodi iure provident, veritatis molestiae repellat dolor. Natus est iste aliquam nemo iure error praesentium laboriosam, cum eligendi magni veritatis?
+                        </p>
+                        <button class="bg-teal-500 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-20 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125">
+                            Watch Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+</body>
+
+</html>
