@@ -1,37 +1,139 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="/dist/output.css" rel="stylesheet">
-    <link href="/src/style.css" type="text/css"  rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="/dist/output.css" rel="stylesheet" />
+  <link href="/src/style.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
-    <section class="bg-gray-900 h-screen flex justify-center items-center gap-x-16 text-white ">
-        <div class="w-[300px] h-[420px] bg-transparant cursor-pointer group perspective">
-            <div class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
-               <div class="absolute backface-hidden border-2 w-full h-full">
-                   <img src="./assets/img/ironman3.jpg" class="w-full h-full"/>
-                </div>
-                <div class="absolute backface-hidden my-rotate-y-180 w-full h-full bg-gray-100 overflow-hidden">
-                    <div class=" text-center flex flex-col items-center justify-center h-full text-gray-800 px-2 pb-24">
-                        <h1 class="text-3xl font-semibold">Iron Man 3</h1>
-                        <p class="my-2">9.0 rating</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nihil commodi iure provident, veritatis molestiae repellat dolor. Natus est iste aliquam nemo iure error praesentium laboriosam, cum eligendi magni veritatis?
-                        </p>
-                        <button class="bg-teal-500 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-20 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125">
-                            Watch Now
-                        </button>
-                    </div>
-                </div>
+  <section class="bg-gray-900 h-screen flex justify-center items-center gap-x-16 text-white">
+    <div class="w-[210px] h-[500px] bg-transparant  group perspective">
+      <div class=" relative preserve-3d group-hover:my-rotate-y-180 w-full h-full  duration-1000">
+        <div class="absolute backface-hidden border-2 w-full h-3/5 rounded-xl">
+          <div class="absolute top-0 left-0 w-full drop-shadow-2xl">
+            <div class="h-7 bg-white rounded-b-2xl mx-5">
+              <h1 class="text-black font-semibold text-center">
+                Spedah Gunung
+              </h1>
             </div>
+          </div>
+          <img src="assets/img/ironman3.jpg" class="w-full h-full rounded-xl" />
+          <div class="absolute bottom-0 left-0 w-full">
+            <div class="h-9 w-full bg-white rounded-b-md p-1 flex flex-row ">
+              <span class=" basis-3/4 text-black font-semibold text-lg">Rp. 15.000.000</span>
+              <div class="basis-1/4 flex flex-row">
+                <h1 class="text-gray-400 px-1">|</h1>
+                <object data="./assets/img/Star.svg" class="h-7 w-7"></object>
+                <span class="text-black font-semibold text-lg">4/5</span>
+              </div>
+            </div>
+          </div>
         </div>
-       
-    </section>
+        <div
+          class="absolute backface-hidden my-rotate-y-180  border-2 w-full h-3/5 rounded-xl bg-gray-100 overflow-hidden">
+
+          <!-- <img src="assets/img/ironman3.jpg" class=" absolute w-full h-full rounded-xl" /> -->
+          <div class="" >
+            <div class=" w-full h-full ">
+              <div id="default-carousel" class="relative" data-carousel="static">
+                <div class=" relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+
+                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <span
+                      class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl ">Primer
+                      Slide</span>
+                    <!-- <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" -->
+                    <img src="assets/img/ironman3.jpg"
+                      class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                  </div>
+
+                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <!-- <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" -->
+                    <img src="assets/img/ironman3.jpg"
+                      class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                  </div>
+
+                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <!-- <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" -->
+                    <img src="assets/img/ironman3.jpg"
+                      class="block absolute top-1/2 left-1/2 w-full  -translate-x-1/2 -translate-y-1/2" alt="...">
+                  </div>
+                </div>
+
+
+                <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
+                    data-carousel-slide-to="0"></button>
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                    data-carousel-slide-to="1"></button>
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                    data-carousel-slide-to="2"></button>
+                </div>
+
+                <button type="button"
+                  class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                  data-carousel-prev>
+                  <span
+                    class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                    <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                    <span class="hidden">Anterior</span>
+                  </span>
+                </button>
+                <button type="button"
+                  class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                  data-carousel-next>
+                  <span
+                    class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                    <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <span class="hidden">Siguiente</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class=" flex  absolute top-24 px-2 flex-row justify-between w-full h-full  ">
+              <button
+                class="opacity-50 flex justify-center  items-center bg-slate-500 drop-shadow-xl h-7 w-7 text-white rounded-full ">
+                <object data="./assets/img/segitiga.svg" class="cursor-pointer rotate-180 h-4 w-4"></object>
+              </button>
+              <button
+                class="opacity-50  flex justify-center items-center bg-slate-500 drop-shadow-xl h-7 w-7 text-white rounded-full ">
+                <object data="./assets/img/segitiga.svg" class=" h-4 w-4"></object>
+              </button>
+            </div>
+          </div>
+          <div class="z-10 flex flex-1 flex-col items-center justify-center h-full text-gray-800 px-2 pb-24">
+            <div
+              class=" flex items-center gap-1 absolute -bottom-7 delay-500 duration-1000 group-hover:bottom-7 scale-0 group-hover:scale-125">
+              <button
+                class=" flex justify-center items-center bg-white drop-shadow-xl h-7 w-7 text-white rounded-full ">
+                <object data="./assets/img/market.svg" class="cursor-pointer h-4 w-4"></object>
+              </button>
+              <button
+                class="flex justify-center items-center bg-white drop-shadow-xl h-12 w-12  text-white rounded-full">
+                <object data="./assets/img/plus.svg" class=" h-7 w-7"></object>
+              </button>
+              <button class="flex justify-center items-center bg-white drop-shadow-xl h-7 w-7 text-white rounded-full">
+                <object data="./assets/img/Eye.svg" class="h-7 w-7"></object>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+
 </body>
 
 </html>

@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+/* @layer components {
 .rotate-y-180 {
     transform: rotateY(180deg); 
 }
 .b {
     backface-visibility: hidden;
 }
-}
+} */

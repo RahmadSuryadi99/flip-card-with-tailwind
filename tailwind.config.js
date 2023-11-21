@@ -4,7 +4,6 @@ const plugin = require('tailwindcss/plugin')
 const Myclass = plugin(function ({addUtilities}) {
   addUtilities({
     ".my-rotate-y-180":{
-      color: "#000",
       transform: "rotateY(180deg)",
     },
     ".preserve-3d":{
@@ -23,7 +22,10 @@ module.exports = {
   theme: {
     extend: {
       rotate: {
-        '17': '17deg',
+        '12': '17deg',
+      },
+      tes:{
+        
       }
     },
   },
